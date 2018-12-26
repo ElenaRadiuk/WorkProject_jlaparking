@@ -1,0 +1,804 @@
+/*
+Theme Name: JLA Parking
+Author:
+Description: theme
+Version: 1.0
+*/
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+a[href^="tel:"] {
+    color: #181818;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url("fonts/Roboto-Regular.ttf");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url("fonts/Roboto-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url("fonts/Roboto-Light.ttf");
+    font-weight: 300;
+}
+
+
+body {
+    margin: 0;
+    font-family: Roboto-Regular, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #181818;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+input[type=submit] {
+    -webkit-border-radius:0;
+}
+input, textarea {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    border: none;
+    border-radius: 7px;
+    background: #005bb2;
+    color: white;
+    font-family: Roboto-Bold;
+    font-size: 26px;
+    margin-top: 20px;
+}
+
+button a {
+    display: inline-block;
+    padding: 15px 40px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+h3 {
+    font-family: Roboto-Bold;
+    font-size: 46px;
+    color: #005bb2;
+    margin-bottom: 30px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1440px;
+}
+
+
+.menu-wrapper {
+    width: 50%;
+}
+header ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    text-decoration: none;
+}
+
+header ul li {
+    list-style: none;
+    text-transform: capitalize;
+}
+
+header li a {
+    color: #181818;
+    font-size: 22px;
+}
+
+.phone-menu {
+    font-family: Roboto-Bold;
+}
+
+section.main {
+    max-height: 700px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.main-text {
+    position: absolute;
+    top: 130px;
+    width: 100%;
+    color: white;
+}
+
+.main-text h1 {
+    font-size: 58px;
+    font-family: Roboto-Regular;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+.main-text div p{
+    font-size: 26px;
+    padding: 0 25px;
+    font-family: Roboto-Regular;
+    font-weight: normal;
+}
+
+
+/* section about */
+
+section.about-us {
+    display: flex;
+    justify-content: center;
+    padding: 125px 0 125px;
+}
+
+.about-us-item {
+    width: 50%;
+    max-width: 710px;
+    padding: 10px;
+}
+
+.about-us-item h3 {
+    margin-top: 55px;
+    margin-bottom: 30px;
+}
+
+.about-us-item .item-text {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* advantages */
+
+section.advantages {
+    display: flex;
+    justify-content: center;
+    padding: 70px 0 70px;
+    background-color: #f7f7f7;
+}
+
+.advantages-item {
+    width: 45%;
+    max-width: 650px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.advantages-item h3 {
+    margin-top: 55px;
+    margin-bottom: 30px;
+}
+
+.advantages-item .item-text {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.return-section, .location-section {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.return-section .item-wrapper, .location-section .item-wrapper {
+    max-width: 1440px;
+}
+
+.return-section .item-text, .location-section .item-text {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.return-section h3, .location-section h3 {
+    margin: 30px 0;
+}
+
+.map-section {
+    margin-top: 120px;
+}
+
+/* contact */
+section.contact-us {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 85px;
+}
+
+.contactus-wrapper {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contactform-item {
+    width: 65%;
+}
+
+.contactform-item .your-name {
+    padding-right: 23px;
+}
+
+.contactform-item input, .contactform-item textarea  {
+    border: 1px solid #dadada;
+    color: #9d9d9d;
+    font-size: 18px;
+    font-family: Roboto-Regular;
+    padding: 20px 30px;
+    margin: 30px 0 0;
+}
+
+.contactform-item input {
+    height: 55px;
+    line-height: 55px;
+}
+
+.contactform-item .your-email input  {
+    width: calc(50%);
+    max-width: 465px;
+}
+
+.contactform-item .your-name input {
+    width: calc(50% - 25px);
+    max-width: 465px;
+}
+
+.contactform-item .phone-number, .contactform-item textarea {
+    width: 100%;
+    max-width: 950px;
+    font-family: Roboto-Regular;
+}
+
+.submit-btn {
+    text-align: right;
+    position: relative;
+}
+
+.submit-btn input {
+    border: none;
+    border-radius: 7px;
+    background: #005bb2;
+    color: white;
+    line-height: 1;
+    padding: 0 60px;
+    text-transform: uppercase;
+    font-family: Roboto-Bold;
+    font-size: 26px;
+}
+
+div.wpcf7 .ajax-loader {
+    position: absolute;
+    right: 0;
+}
+
+.contacts-item {
+    width: 30%;
+    padding-left: 120px;
+    padding-top: 220px;
+}
+
+.contacts-item h4 {
+    font-family: Roboto-Bold;
+    font-size: 40px;
+    margin: 0 0 15px;
+    color: #005bb2;
+}
+
+.contacts-item .ci-box {
+    padding-bottom: 40px;
+}
+
+.ci-box>div {
+    line-height: 1.8;
+}
+
+
+footer {
+    background-color: #005bb2;
+    color: white;
+    min-height: 170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+}
+
+.copyright-text {
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+address {
+    font-family: Roboto-Light;
+    font-style: normal;
+    font-size: 10px;
+}
+address span {
+    padding-right: 20px;
+    color: white;
+}
+
+address a {
+    color: white;
+}
+
+
+.address-item {
+    width: 80%;
+}
+
+.imgpark-item {
+    width: 20%;
+}
+
+.hidden-formob {
+    display: block;
+}
+
+.main-text-mob {
+    display: none;
+}
+
+.header-wrapper .mob-phone {
+    display: none;
+}
+
+@media (max-width: 468px) {
+    footer {
+        padding: 10px 25px;
+    }
+    .footer-wrapper {
+        display: block;
+    }
+    .address-item {
+        width: 100%;
+    }
+    .imgpark-item {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    button {
+        margin-top: 0;
+    }
+    .main-text {
+        top: 0;
+    }
+    .main-text h1 {
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width:469px ) and (max-width: 768px) {
+
+    .address-item {
+        width: 50%;
+    }
+    .imgpark-item {
+        width: 50%;
+        text-align: center;
+    }
+    .main-text {
+        top: 30px;
+    }
+    .main-text h1 {
+        font-size: 32px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        position: absolute;
+        left: 5px;
+        top: 2px;
+    }
+
+    .header-wrapper .mob-phone {
+        display: inline-block;
+        height: 50px;
+        line-height: 50px;
+        padding-left: 20px;
+        font-weight: 600;
+        padding-top: 4px;
+    }
+    .logo img {
+        max-height: 50px;
+    }
+
+    .phone-menu {
+        display: none;
+    }
+
+    .header-wrapper, header ul {
+        display: block;
+        margin: 0;
+        padding-bottom: 20px;
+        background: white;
+    }
+
+    header li a {
+        font-size: 20px;
+    }
+
+    header ul li:nth-child(2) a {
+        padding-bottom: 20px;
+    }
+
+    .header-wrapper{
+          background-color: white;
+          position: relative;
+          text-align: center;
+          height: 55px;
+          z-index: 100;
+          width: 100%;
+      }
+
+
+    .header-wrapper label{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        z-index: 2;
+        line-height: 55px;
+        outline: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-appearance: none;
+    }
+
+    .header-wrapper input:focus, header-wrapper input:active  {
+        background: transparent;
+    }
+
+    .burger-line{
+        position: absolute;
+        top: 16px;
+        right: 10px;
+        width: 35px;
+        height: 2px;
+        background-color: #9d9d9d;
+        transition: .5s all;
+    }
+
+    .second, .third{
+        top: 27px;
+    }
+
+    .fourth{
+        top: 38px;
+    }
+
+    .menu-wrapper{
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        transform: translateY(100%);
+        max-height: 0;
+        font-size: 0;
+        overflow: hidden;
+        transition: .5s all;
+    }
+
+    .menu-wrapper a{
+        display: block;
+        width: 100%;
+        padding: 10px;
+        text-decoration: none;
+        background-color: white;
+    }
+
+    .menu-wrapper a:hover{
+        background-color: white;
+    }
+
+    .menu-wrapper.show{
+        max-height: 500px;
+        font-size: 16px;
+    }
+
+    #hamburger-icon {
+        width: 40px;
+        height: 20px;
+        position: absolute;
+        right: 5px;
+        top: 18px;
+        display: block;
+        margin: 0;
+    }
+    #hamburger-icon .line {
+        display: block;
+        background: #005bb2;
+        width: 36px;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        border-radius: 4px;
+        transition: all 0.4s;
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+    }
+    #hamburger-icon .line.line-1 {
+        top: 0;
+    }
+    #hamburger-icon .line.line-2 {
+        top: 50%;
+    }
+    #hamburger-icon .line.line-3 {
+        top: 100%;
+    }
+    #hamburger-icon:hover .line-1, #hamburger-icon:focus .line-1 {
+        transform: translateY(-1px);
+        -webkit-transform: translateY(-1px);
+        -moz-transform: translateY(-1px);
+    }
+    #hamburger-icon:hover .line-3, #hamburger-icon:focus .line-3 {
+        transform: translateY(1px);
+        -webkit-transform: translateY(1px);
+        -moz-transform: translateY(1px);
+    }
+    #hamburger-icon.active .line-1 {
+        transform: translateY(9px) translateX(0px) rotate(45deg);
+        -webkit-transform: translateY(9px) translateX(0px) rotate(45deg);
+        -moz-transform: translateY(9px) translateX(0px) rotate(45deg);
+    }
+    #hamburger-icon.active .line-2 {
+        opacity: 0;
+    }
+    #hamburger-icon.active .line-3 {
+        transform: translateY(-11px) translateX(0px) rotate(-45deg);
+        -webkit-transform: translateY(-11px) translateX(0px) rotate(-45deg);
+        -moz-transform: translateY(-11px) translateX(0px) rotate(-45deg);
+    }
+
+    .main-text-mob {
+        display: block;
+        padding: 25px 10px 0;
+    }
+
+    .hidden-formob {
+        display: none;
+    }
+
+    button a {
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    h3 {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+    .about-us-item h3 {
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    section.about-us {
+        display: block;
+        justify-content: center;
+        padding: 35px 0 35px;
+    }
+    .about-us-item {
+        width: 100%;
+        max-width: none;
+        padding: 10px;
+    }
+    section.advantages {
+        display: block;
+        padding: 20px 0 20px;
+    }
+    .advantages-item {
+        width: 100%;
+        padding: 20px 10px;
+        margin: 0 auto;
+    }
+    .advantages-item h3 {
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    .return-section, .location-section {
+        margin-top: 0;
+        display: block;
+        padding: 0 10px;
+    }
+    .return-section h3, .location-section h3 {
+        margin: 30px 0 20px;
+    }
+
+    .map-section iframe {
+        height: 350px !important;
+    }
+    .map-section {
+        margin-top: 30px;
+    }
+    section.contact-us {
+        margin-top: 0;
+        display: block;
+        padding-bottom: 10px;
+    }
+    .contactus-wrapper {
+        display: block;
+        padding: 0 10px;
+    }
+    .contactform-item {
+        width: 100%;
+    }
+    .contactform-item .your-name input {
+        width: 100%;
+        max-width: none;
+    }
+    .contactform-item .your-email input {
+        width: 100%;
+        max-width: none;
+    }
+    .contactform-item .your-name {
+        padding-right: 0;
+    }
+    .contacts-item {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    .submit-btn {
+        text-align: center;
+    }
+
+    .submit-btn input {
+        padding: 0 30px;
+        font-size: 22px;
+        height: 45px;
+    }
+    .contacts-item h4 {
+        font-family: Roboto-Bold;
+        font-size: 22px;
+        margin: 0 0 15px;
+        color: #005bb2;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .menu-wrapper {
+        width: 70%;
+    }
+    h3 {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+    .about-us-item h3 {
+        margin-top: 35px;
+        margin-bottom: 30px;
+    }
+    section.about-us {
+        display: flex;
+        justify-content: center;
+        padding: 55px 0 55px;
+    }
+    section.advantages {
+        display: flex;
+        justify-content: center;
+        padding: 50px 0 50px;
+    }
+    .advantages-item h3 {
+        margin-top: 35px;
+        margin-bottom: 30px;
+    }
+    .map-section {
+        margin-top: 50px;
+    }
+    .address-item {
+        width: 60%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1100px){
+    .contacts-item {
+        width: 30%;
+        padding-left: 20px;
+        padding-top: 220px;
+    }
+    .contactform-item .your-name input {
+        width: 100%;
+        max-width: none;
+    }
+    .contactform-item .your-email input {
+        width: 100%;
+        max-width: none;
+    }
+
+    .main-text {
+        top: 50%;
+        margin-top: -135px;
+    }
+    .main-text div p {
+        font-size: 20px;
+        padding: 0 15px;
+        line-height: 1.6;
+    }
+    .main-text h1 {
+        font-size: 38px;
+        margin-bottom: 25px;
+    }
+
+    button a {
+        display: inline-block;
+        padding: 10px 25px;
+        color: white;
+        text-transform: uppercase;
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1099px) and (max-width: 1300px) {
+    .main-text {
+        top: -15px;
+    }
+}
+
+@media (max-width: 1438px){
+    .contactform-item .your-name {
+        padding-right: 0;
+    }
+}
